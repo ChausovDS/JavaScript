@@ -1,0 +1,57 @@
+<script>
+let a = 5;
+let b = 10;
+
+function sum(a, b){
+    return a + b;
+};
+
+let result = sum(a, b)
+alert(result);
+
+function minus(a, b){
+    return a - b;
+};
+
+result = minus(a, b)
+alert(result);
+
+function multiply (a, b){
+    return (a * b);
+};
+
+result = multiply(a, b)
+alert(result);
+
+function division(a, b){
+    if (b!=0){
+        return a / b
+    } else {
+        return 'на ноль делить нельзя'
+    }
+}
+
+result = division(a, b)
+alert (result)
+    
+    
+    
+function mathOperation(arg1, arg2, operation){
+    switch(operation){
+        case '+':
+            sum(arg1, arg2);
+            break;
+        case '-':
+            minus(arg1, arg2);
+            break;
+        case '*':
+            multiply(arg1, arg2);
+            break;
+        case '/':
+            division(arg1, arg2);
+            break;
+    }
+}
+result = mathOperation(a, b, prompt('введите арифметическую операцию: +, -, *, /'))
+alert (result)
+</script>
